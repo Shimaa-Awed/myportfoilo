@@ -26,6 +26,6 @@
     title:"Website lamp",
     discription:"Coffe used tools JS,Swpier",
     category:"Js",
-    imgPath:"/public/lamp.png",
+    imgPath:"public/lamp.png",
   }
   ]

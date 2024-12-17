@@ -61,7 +61,7 @@ const Contact = () => {
         {/* نقل الرسالة إلى أسفل النموذج */}
       
         
-        <div className="border animation">
+        <div className=" animation">
         
         <Lottie style={{ height:350 }} className="contactUsAnimation" animationData={contactUsAnimation} />
         </div>
