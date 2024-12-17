@@ -1,0 +1,143 @@
+/* 
+========================
+table of contact
+========================
+
+1-left section
+2-right section
+3- responsive (media quary)
+ */
+
+
+/* left section */
+main.flex {
+  gap: 2rem;
+  align-items: start;
+}
+
+main .left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .left-section button {
+  width: 11rem;
+  background: rgba(36, 37, 46, 1);
+  padding: 0.75rem 0;
+  font-size: 1.2rem;
+  text-align: center;
+  opacity: 0.5;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+main .left-section .active {
+  opacity: 1;
+  font-weight: blod;
+  border: 1px solid var(--blue);
+}
+.light main .left-section .active{
+  border: 1px solid #000;
+}
+main .left-section button:hover {
+  opacity: 1;
+ 
+}
+
+/* right-section */
+main .right-section {
+  display: flex;
+  flex-grow:1;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+main .right-section .card {
+  border: 1px solid rgba(93, 188, 252, 0.3);
+  border-radius: 5px;
+  transition: 0.3s;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
+  box-shadow:-1px 1px 1px rgba(0,0,0,0.12),1px 1px 1px rgba(0,0,0,0.12);
+}
+ .light main .right-section .card, .light main .right-section .card:hover{
+  border:none
+}
+.card img {
+  border-radius: 5px;
+}
+main .right-section .card:hover {
+  border: 1px solid var(--blue);
+  rotate: 1deg;
+  scale: 1.01;
+  cursor: pointer;
+  
+}
+.light main .right-section .card:hover {
+  background:rgb(246,246,246);
+}
+main .right-section .card .box {
+  /* padding:0px 5px; */
+}
+main .right-section .card .title {
+  color: var(--title);
+  font-size: 1rem;
+  padding: 7px 5px;
+}
+
+main .right-section .card .subtitle {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  letter-spacing: 0.4px;
+  padding: 5px;
+}
+
+main .right-section .links {
+  justify-content: space-between;
+  align-items: center;
+  margin: 11px 5px;
+}
+main .right-section .icons {
+  font-size: 1.2rem;
+  color: var(--subtitle);
+}
+
+main .right-section .icons icon {
+  transition: 0.3s;
+}
+main .right-section .icons .icon:hover {
+  color: var(--icon-hover);
+  scale: 1.1;
+  cursor: pointer;
+}
+main .right-section .box .more {
+  margin-right: 12px;
+  font-size: 1rem;
+  font-weight: blod;
+  color: var(--blue);
+}
+
+main .right-section .box .more .icon {
+  /* margin-top:22px; */
+  font-size: 12px;
+}
+
+/* responsive */
+
+@media (max-width: 600px) {
+  main.flex {
+    flex-direction: column;
+  }
+  main .left-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  main .left-section button {
+    width: 8rem;
+    font-size: 1rem;
+  }
+}

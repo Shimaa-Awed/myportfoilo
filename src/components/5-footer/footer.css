@@ -1,0 +1,48 @@
+/* footer */
+
+footer {
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+footer ul.flex {
+  gap: 16px;
+}
+footer ul li a {
+  color: var(--subtitle);
+  opcity: 0.9;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+footer ul li a:hover {
+  color: var(--blue);
+  font-size: 1rem;
+  font-weight: blod;
+}
+
+footer.flex p {
+  color: rgb(113 113 122);
+}
+footer.flex p span {
+  transition: 0.3s;
+}
+footer.flex p span:hover {
+  text-decoration-line: underline; /* إضافة خط تحت النص */
+  text-decoration-style: solid; /* تحديد نمط الخط (مستمر) */
+  text-decoration-thickness: 1px; /* تحديد سمك الخط */
+  text-decoration-color: var(--title);
+  color: var(--title);
+}
+
+/* responsive */
+
+@media (max-width: 800px) {
+  footer.flex {
+    flex-direction: column;
+  }
+  footer.flex p {
+    padding: 1rem 0px;
+  }
+}

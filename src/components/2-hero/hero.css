@@ -1,0 +1,87 @@
+
+.hero
+ {
+    justify-content:space-between
+}
+
+
+.left-section .avitar img{
+    width:120px;
+    padding:10px;
+    border-radius:50%;
+   border:1px solid #a5a227;
+   box-shadow:2px 2px 40px inset; 
+  padding:5px;
+  margin-right:10px;
+}
+.left-section .avitar .verifie{
+    margin-top:4rem;
+    font-size:17px;
+    color:blue;
+}
+.left-section h3 {
+    font-size:2.85rem;
+    line-height:3.3rem;
+    margin:24px 0;
+    font-weight:blod;
+    color:var(--title);
+}
+.left-section p {
+    color:var(--subtitle);
+   margin-bottom:22px;
+   line-height:1.65rem;
+   font-size:0.9rem;
+
+}
+.left-section .links{
+gap:14px;
+
+
+}
+.left-section .links .icon{
+    font-size:1.2rem;
+    color:var(--subtitle);
+}
+.left-section .links .icon:hover{
+    color:var(--icon-hover);
+    transition:0.3s;
+    font-size:1.4rem;
+    cursor:pointer;
+     scale:1.1;
+   
+}
+
+/* right-section animation */
+.right-section.animation{
+    width:100%;
+    translate:100px 55px;
+}
+
+/* responsive */
+
+
+
+@media (max-width: 1000px){
+    container{
+        width:90%;
+        padding:0 1.7rem;
+    }
+    .right-section.animation{
+        display:none;
+      background:red;
+    }
+   
+}
+
+@media (max-width: 600px){
+    container{
+        width:97%;
+        padding:0 1.7rem;
+    }
+}
+
+@media (max-width: 700px){
+    .left-section .avitar{
+        margin-top:20px;
+    }
+}

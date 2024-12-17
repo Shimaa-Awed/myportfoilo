@@ -1,0 +1,134 @@
+/*
+=========================== 
+table of contents
+=========================== 
+
+1-header design
+2-iconsButton
+3-model & popup
+4- media quary (responsive)
+*/
+
+header.flex {
+  justify-content: space-between;
+  padding: 0 2.4rem;
+  margin-top: 1.2rem;
+}
+header.flex nav {
+  background-color: var(--bgHeader);
+  padding: 0.77rem 1.6rem;
+  border-radius: 55px;
+  box-shadow: 1px 1px 10px #000;
+}
+header ul.flex {
+  gap: 16px;
+}
+header ul li a {
+  color: var(--title);
+  opcity: 0.9;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+header i {
+  font-size: 16px;
+}
+header ul li a:hover {
+  color: var(--blue);
+  opcity: 1;
+  font-size: 0.9rem;
+}
+header button.menu {
+  display: none;
+}
+/*model menu  */
+header .fixed {
+  position: fixed;
+  inset: 0;
+  background: rdba(40, 40, 48, 0.91);
+  backdrop-filter: blur(6px);
+}
+header ul.model {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: var(--secondry);
+  border-radius: 1rem;
+  animation: menu 0.7s ease-in;
+}
+header ul.model li {
+  border-bottom: 1px solid var(--border);
+  padding: 0.5rem;
+}
+header ul.model li:last-child {
+  border: none;
+}
+header ul.model li:first-child {
+  text-align: right;
+  border: none;
+  padding-bottom: 0;
+  padding-top: 0.2rem;
+}
+header ul.model li a {
+  font-size: 16px;
+}
+
+/* iconButon */
+header button.menu,
+header .icon-moon,
+header .icon-sun {
+  font-size: 23px;
+  background: var(--bgHeader);
+  padding: 5px 4px 2px;
+  color: var(--subtitle);
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid var(--border);
+  color: var(--subtitle);
+  border: 1px solid rgba(244, 165, 96, 0.249);
+  transition: 0.2s;
+  box-shadow: 1px 1px 40px rgba(35, 35, 36, 0.165);
+}
+header .icon-sun {
+  color: rgb(255, 165, 0);
+}
+header button.menu .icon-menu:hover,
+header button.mode .icon-moon:hover {
+  color: var(--title);
+  border: 1px solid rgba(244, 165, 96);
+  scale: 0.9;
+}
+header .model button {
+  font-size: 1.5rem;
+  color: var(--subtitle);
+  transition: 0.3s;
+  font-weight: blod;
+}
+header .model button:hover {
+  font-size: 1.7rem;
+  color: crimson;
+  rotate: 180deg;
+}
+
+/* animation menu */
+@keyframes menu {
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  header.flex nav {
+    display: none;
+  }
+  header button.menu {
+    display: block;
+  }
+}
